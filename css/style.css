@@ -14,7 +14,6 @@ html {
 html,
 body {
   width: 100vw;
-  overflow-x: hidden;
 }
 
 * {
@@ -25,12 +24,19 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header */
 
 header {
   width: 100%;
   background-color: var(--purple-bg);
   padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 #container-header {
@@ -108,7 +114,7 @@ header {
 #hero {
   width: 100%;
   background-color: var(--purple-bg);
-  height: 587px;
+  min-height: 587px;
   padding: 100px;
   border-bottom: #4fff4b solid 6px;
 }
@@ -146,6 +152,11 @@ header {
 
 #text-1 a img {
   margin-top: 10px;
+}
+
+#text-1 a:hover {
+  transform: translateX(10px);
+  transition-duration: 0.6s;
 }
 
 /* main */
@@ -210,6 +221,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding-bottom: 100px;
+  width: 100%;
 }
 
 .thePost-2 {
@@ -217,18 +229,223 @@ main {
   gap: 18px;
   display: flex;
   flex-direction: column;
-}
-
-.thePost-2 picture img {
-  width: 100%;
-  max-width: 370px;
+  /*  */
 }
 
 .thePost-2 p {
   font-size: 1.4rem;
+  max-width: 370px;
 }
 
 .thePost-2 h2 a {
   font-size: 2.4rem;
   color: var(--purple-bg);
+  max-width: 370px;
+}
+
+.thePost-2 h2 a:hover {
+  color: rgb(165, 22, 22);
+  transition: 0.3s;
+}
+
+.thePost-2 h2 a:active {
+  color: rgb(165, 22, 22);
+  transition: 0.3s;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 55%;
+  }
+
+  #hero {
+    padding: 20px;
+  }
+
+  #hero #containerHero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #text-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #text-1 h1 {
+    text-align: center;
+  }
+
+  #text-1 p {
+    text-align: center;
+  }
+
+  #text-1 a {
+    text-align: center;
+  }
+
+  #textImg {
+    /* order: -1; */
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  #sectionPost-1 {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  #navBar ul,
+  #searchBar {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #navBar {
+    transition: 0.3s;
+  }
+
+  #btn-burger {
+    display: flex;
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 40px;
+  }
+
+  #sectionPost-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  #navBar.on ul {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    left: 0;
+    top: 90px;
+    gap: 0;
+    background-color: var(--purple-bg);
+    padding-top: 3rem;
+  }
+
+  #navBar.on ul li {
+    padding: 10px 10px 10px 20px;
+    border-bottom: var(--dark-bg) 2px solid;
+  }
+
+  #navBar.on ul li:last-child {
+    border-bottom: none;
+  }
+
+  #navBar.on ul li:hover {
+    background-color: #511979;
+  }
+
+  #navBar.on ul li:active {
+    background-color: #511979;
+  }
+
+  #navBar.on ul li a {
+    display: block;
+  }
+
+  #searchBar.on {
+    visibility: visible;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    border-radius: 0;
+    transition: 0.2s;
+  }
+
+  #searchBar.on input {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .btn-buger-chd {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: 0.3s;
+  }
+
+  #navBar.on #bar-1 {
+    transform: rotate(135deg);
+    transition-duration: 0.3s;
+  }
+
+  #navBar.on #bar-2 {
+    opacity: 0;
+  }
+
+  #navBar.on #bar-3 {
+    transform: rotate(-135deg) translate(9px, 8px);
+    transition-duration: 0.3s;
+  }
+
+  .thePost-2 {
+    align-items: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 45%;
+  }
+
+  #textImg img {
+    width: 450px;
+  }
+
+  #sectionPost-1 picture img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 590px) {
+  html {
+    font-size: 40%;
+  }
+
+  #textImg img {
+    width: 350px;
+  }
+
+  #sectionPost-1 picture img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 430px) {
+  html {
+    font-size: 36%;
+  }
+
+  #textImg img {
+    width: 300px;
+  }
+
+  #sectionPost-1 picture img {
+    width: 300px;
+  }
+
+  .thePost-2 img {
+    width: 300px;
+  }
 }

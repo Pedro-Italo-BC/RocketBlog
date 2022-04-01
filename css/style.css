@@ -146,3 +146,57 @@ header {
 #text-1 a img {
   margin-top: 10px;
 }
+
+/* main */
+
+/* Section 1 */
+
+main {
+  background-color: var(--light-purple);
+  width: 100%;
+}
+
+#container-main {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sectionPost-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 66rem;
+  min-height: 660px;
+  gap: 6rem;
+  padding-top: 64px;
+}
+
+.thePosts {
+  width: 57rem;
+}
+
+.thePosts p {
+  font-size: 1.6rem;
+}
+
+.thePosts h2 {
+  margin: 10px 0;
+}
+
+.thePosts h2 a {
+  font-size: 2.4rem;
+  color: var(--purple-bg);
+}
+
+.thePosts h2 a:hover {
+  color: rgb(165, 22, 22);
+  transition: 0.3s;
+}
+
+.thePosts h2 a:active {
+  color: rgb(165, 22, 22);
+  transition: 0.3s;
+}

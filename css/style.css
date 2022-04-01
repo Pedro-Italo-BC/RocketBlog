@@ -1,0 +1,114 @@
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: var(--purple-bg);
+  padding-top: 30px;
+}
+
+#container-header {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navBar ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+#navBar ul li a {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+#navBar ul li a:hover {
+  color: orange;
+  transition-duration: 0.3s;
+}
+
+#navBar ul li a:active {
+  color: plum;
+  transition-duration: 0.3s;
+}
+
+#btn-burger {
+  display: none;
+}
+
+#searchBar {
+  width: 30rem;
+  height: 4.4rem;
+  display: flex;
+  background-color: var(--dark-bg);
+  border-radius: 5px;
+}
+
+#searchBar input {
+  height: 100%;
+  background-color: var(--dark-bg);
+  width: 23rem;
+  color: var(--white);
+  padding-left: 20px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  outline: none;
+}
+
+#searchBar button {
+  height: 100%;
+  width: 7rem;
+  background-color: var(--button-bg);
+  border: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+#searchBar button:hover {
+  background-color: #7f36b3;
+  transition-duration: 0.3s;
+}
+
+#searchBar button:active {
+  background-color: #63218f;
+  transition-duration: 0.3s;
+}
+
+#hero {
+  width: 100%;
+  background-color: var(--purple-bg);
+  padding-top: 6.4rem;
+}
+
+#containerHero {
+  display: flex;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}

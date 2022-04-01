@@ -24,6 +24,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Header */
+
 header {
   width: 100%;
   background-color: var(--purple-bg);
@@ -100,10 +102,14 @@ header {
   transition-duration: 0.3s;
 }
 
+/* First Section ( Hero ) */
+
 #hero {
   width: 100%;
   background-color: var(--purple-bg);
-  padding-top: 6.4rem;
+  height: 587px;
+  padding: 100px;
+  border-bottom: #4fff4b solid 6px;
 }
 
 #containerHero {
@@ -111,4 +117,32 @@ header {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+  justify-content: space-between;
+}
+
+#text-1 h1 {
+  font-size: 3.6rem;
+  color: var(--white);
+  max-width: 570px;
+  color: var(--button-bg);
+}
+
+#text-1 p {
+  color: var(--white);
+  font-size: 1.8rem;
+
+  max-width: 470px;
+}
+
+#text-1 a {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  color: var(--button-bg);
+  font-weight: 700;
+}
+
+#text-1 a img {
+  margin-top: 10px;
 }
